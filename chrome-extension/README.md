@@ -2,10 +2,12 @@
 
 Algorun is an AI-powered tutoring overlay designed for LeetCode. It injects directly into LeetCode problem solving pages (`https://leetcode.com/problems/*`), dynamically extracts the problem description and your active editor code, and offers intelligent, step-by-step guidance without giving away spoilers.
 
-<p align="center">
-  <img src="public/demos/demo1.png" width="220" />
-  <img src="public/demos/demo2.png" width="620" />
-</p>
+<table align="center" width="100%">
+  <tr>
+    <td width="28%"><img src="public/demos/demo1.png" width="100%" /></td>
+    <td width="72%"><img src="public/demos/demo2.png" width="100%" /></td>
+  </tr>
+</table>
 
 ## ✨ Highlights
 
@@ -27,31 +29,40 @@ Algorun is an AI-powered tutoring overlay designed for LeetCode. It injects dire
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
+
 ```bash
 pnpm install
 ```
 
 ### 2. Development Mode
+
 Run Vite in development mode with HMR (Hot Module Replacement) for Chrome extensions:
+
 ```bash
 pnpm dev
 ```
 
 ### 3. Build Production Extension
+
 Compile TypeScript and generate the optimized Chrome extension bundle:
+
 ```bash
 pnpm build
 ```
+
 This generates:
+
 - `dist/`: Unpacked extension directory for Chrome Developer Mode.
 - `release/`: Packaged `.zip` archive ready for distribution.
 
 ### 4. Load into Chrome
+
 1. Open Google Chrome and navigate to `chrome://extensions/`.
 2. Toggle on **Developer mode** in the top-right corner.
 3. Click **Load unpacked** and select the `chrome-extension/dist` folder.
 
 ### 5. Add Your Gemini API Key
+
 1. Click the Algorun icon in your Chrome toolbar.
 2. Select your preferred Gemini model (e.g. `Gemini 2.5 Flash`).
 3. Paste your Gemini API key (obtainable free from [Google AI Studio](https://aistudio.google.com/app/apikey)).

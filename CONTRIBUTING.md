@@ -8,7 +8,7 @@ First off, thank you for considering contributing to Algorun! It's people like y
 - Fork the repository on GitHub.
 - Clone your fork locally:
   ```bash
-  git clone https://github.com/ichshakib/algo-run-leetcode-tutor.git
+  git clone https://github.com/shakibzcv/algorun-leetcode-tutor.git
   cd algo-run-leetcode-tutor
   ```
 

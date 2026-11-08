@@ -1,5 +1,5 @@
 import useSessionStorage from "@/hooks/useSessionStorage"
-import { getGoogleModel } from "@/lib/model"
+import { DEFAULT_GEMINI_MODEL, getGoogleModel } from "@/lib/model"
 import { SYSTEM_PROMPT } from "@/lib/prompt"
 import { Message, MessagePart } from "@/lib/types"
 import { extractCode } from "@/lib/utils"
@@ -166,7 +166,8 @@ export default function FloatingChatBox({
       "gemini_model",
     ])
     const encryptedKey = storage.gemini_api_key
-    const selectedModel = (storage.gemini_model as string) || "gemini-2.0-flash"
+    const selectedModel =
+      (storage.gemini_model as string) || DEFAULT_GEMINI_MODEL
 
     if (!encryptedKey) {
       setIsStreaming(false)
@@ -272,7 +273,7 @@ export default function FloatingChatBox({
         <div className="header-right">
           {/* GitHub Link */}
           <a
-            href="https://github.com/lwshakib/algo-run-leetcode-tutor"
+            href="https://github.com/shakibzcv/algorun-leetcode-tutor"
             target="_blank"
             rel="noopener noreferrer"
             className="header-action-button"

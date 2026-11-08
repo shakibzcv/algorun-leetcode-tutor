@@ -2,10 +2,12 @@
 
 **AI-powered tutoring overlay for LeetCode.** Get step-by-step solutions, explanations, and learning insights while you solve problems on `leetcode.com`.
 
-<p align="center">
-  <img src="chrome-extension/public/demos/demo1.png" width="220" />
-  <img src="chrome-extension/public/demos/demo2.png" width="620" />
-</p>
+<table align="center" width="100%">
+  <tr>
+    <td width="28%"><img src="chrome-extension/public/demos/demo1.png" width="100%" /></td>
+    <td width="72%"><img src="chrome-extension/public/demos/demo2.png" width="100%" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -65,7 +67,7 @@ algo-run-leetcode-tutor/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ichshakib/algo-run-leetcode-tutor.git
+   git clone https://github.com/shakibzcv/algorun-leetcode-tutor.git
    cd algo-run-leetcode-tutor
    ```
 

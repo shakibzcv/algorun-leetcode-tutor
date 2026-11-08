@@ -4,7 +4,7 @@
   "extension_name": "Algorun - Leetcode Tutor",
   "extension_description": "Master LeetCode problems with AI-powered tutoring - get step-by-step solutions, explanations, and learning insights to ace your coding interviews and improve your algorithmic thinking skills.",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",

@@ -10,6 +10,7 @@ import {
   Cpu,
 } from "lucide-react"
 import { encrypt, decrypt } from "@/lib/encryption"
+import { DEFAULT_GEMINI_MODEL } from "@/lib/model"
 import "./App.css"
 
 /**
@@ -21,7 +22,7 @@ export default function App() {
   // State to hold the API key entered by the user
   const [apiKey, setApiKey] = useState("")
   // State to hold the selected model
-  const [selectedModel, setSelectedModel] = useState("gemini-2.5-flash")
+  const [selectedModel, setSelectedModel] = useState(DEFAULT_GEMINI_MODEL)
   // State to toggle the visibility of the API key in the input field
   const [showKey, setShowKey] = useState(false)
   // State to track if the saving operation is in progress
@@ -33,9 +34,13 @@ export default function App() {
 
   // Available Gemini models
   const models = [
+    { id: "gemini-4-argon", name: "Gemini 4 Argon" },
+    { id: "gemini-3.8-flash", name: "Gemini 3.8 Flash" },
+    { id: "gemini-3.6-flash", name: "Gemini 3.6 Flash" },
+    { id: "gemini-3.5-flash-lite", name: "Gemini 3.5 Flash-Lite" },
+    { id: "gemini-3.1-flash-lite", name: "Gemini 3.1 Flash-Lite" },
     { id: "gemini-3.1-pro-preview", name: "Gemini 3.1 Pro (Preview)" },
     { id: "gemini-3-flash-preview", name: "Gemini 3 Flash (Preview)" },
-    { id: "gemini-3.1-flash-lite", name: "Gemini 3.1 Flash-Lite" },
     { id: "gemini-2.5-pro", name: "Gemini 2.5 Pro" },
     { id: "gemini-2.5-flash", name: "Gemini 2.5 Flash" },
     { id: "gemini-2.5-flash-lite", name: "Gemini 2.5 Flash-Lite" },
